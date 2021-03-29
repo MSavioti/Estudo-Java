@@ -14,7 +14,7 @@ public class Ingrediente {
         int diaMes = dataValidade.getDayOfMonth();
         int mes = dataValidade.getMonthValue();
         int ano = dataValidade.getYear();
-        return "Ingrediente: " + nome + " Data de validade: " + diaMes + "/" + mes + "/" + ano;
+        return "Ingrediente: " + nome + " válido até " + diaMes + "/" + mes + "/" + ano;
     }
 
     public String getNome() {
