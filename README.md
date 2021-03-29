@@ -1,2 +1,2 @@
 # ExercicioCozinha
-Exercício simulando uma cozinha.
+Exercício em Java simulando uma cozinha.
