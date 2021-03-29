@@ -8,4 +8,20 @@ public class Ingrediente {
         this.nome = nome;
         this.dataValidade = dataValidade;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public LocalDate getDataValidade() {
+        return dataValidade;
+    }
+
+    public void setDataValidade(LocalDate dataValidade) {
+        this.dataValidade = dataValidade;
+    }
 }
