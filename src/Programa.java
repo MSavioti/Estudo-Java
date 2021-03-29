@@ -6,15 +6,15 @@ public class Programa {
                 Cozinha.Especialidade.Mineira, 14, 20, "Feijoada"
         );
 
-        var ingrediente = new Ingrediente("Feijão", LocalDate.of(31, 12, 2030));
+        var ingrediente = new Ingrediente("Feijão", LocalDate.of(2030, 12, 31));
         cozinhaMineira.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Farinha", LocalDate.of(31, 12, 2030));
+        ingrediente = new Ingrediente("Farinha", LocalDate.of(2030, 12, 31));
         cozinhaMineira.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Arroz", LocalDate.of(31, 12, 2030));
+        ingrediente = new Ingrediente("Arroz", LocalDate.of(2030, 12, 31));
         cozinhaMineira.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Carne de porco", LocalDate.of(14, 4, 2020));
+        ingrediente = new Ingrediente("Carne de porco", LocalDate.of(2020, 4, 14));
         cozinhaMineira.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Linguiça", LocalDate.of(14, 4, 2020));
+        ingrediente = new Ingrediente("Linguiça", LocalDate.of(2020, 4, 14));
         cozinhaMineira.adicionarIngrediente(ingrediente);
 
         var funcionario = new Funcionario("Altieres Pereira", Funcionario.Funcao.Limpeza);
@@ -32,13 +32,13 @@ public class Programa {
                 Cozinha.Especialidade.Chinesa, 10, 21, "Yakissoba"
         );
 
-        ingrediente = new Ingrediente("Champignon", LocalDate.of(10, 4, 2020));
+        ingrediente = new Ingrediente("Champignon", LocalDate.of(2020, 4, 10));
         cozinhaChinesa.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Brócolis", LocalDate.of(7, 4, 2020));
+        ingrediente = new Ingrediente("Brócolis", LocalDate.of(2020, 4, 7));
         cozinhaChinesa.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Macarrão", LocalDate.of(31, 12, 2030));
+        ingrediente = new Ingrediente("Macarrão", LocalDate.of(2030, 12, 31));
         cozinhaChinesa.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Carne", LocalDate.of(14, 4, 2020));
+        ingrediente = new Ingrediente("Carne", LocalDate.of(2020, 4, 14));
         cozinhaChinesa.adicionarIngrediente(ingrediente);
 
         funcionario = new Funcionario("Ana Luiza Faria", Funcionario.Funcao.Cozinheiro);
@@ -56,11 +56,11 @@ public class Programa {
                 Cozinha.Especialidade.Italiana, 13, 22, "Espaguete"
         );
 
-        ingrediente = new Ingrediente("Molho", LocalDate.of(21, 4, 2020));
+        ingrediente = new Ingrediente("Molho", LocalDate.of(2020, 4, 21));
         cozinhaItaliana.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Macarrão", LocalDate.of(31, 12, 2030));
+        ingrediente = new Ingrediente("Macarrão", LocalDate.of(2030, 12, 31));
         cozinhaItaliana.adicionarIngrediente(ingrediente);
-        ingrediente = new Ingrediente("Carne", LocalDate.of(14, 4, 2020));
+        ingrediente = new Ingrediente("Carne", LocalDate.of(2020, 4, 14));
         cozinhaItaliana.adicionarIngrediente(ingrediente);
 
         funcionario = new Funcionario("Ana Maria", Funcionario.Funcao.Cozinheiro);
