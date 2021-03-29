@@ -11,6 +11,11 @@ public class Funcionario {
         this.funcao = funcao;
     }
 
+    @Override
+    public String toString() {
+        return "Funcionario: \n - Nome: " + nome + "\n - Função: " + funcao;
+    }
+
     public String getNome() {
         return nome;
     }

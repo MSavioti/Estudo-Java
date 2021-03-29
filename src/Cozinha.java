@@ -21,6 +21,28 @@ public class Cozinha {
         funcionarios = new ArrayList<>();
     }
 
+    @Override
+    public String toString() {
+        String mensagem = "";
+        mensagem += "Cozinha de especialidade " + especialidade + ":\n";
+        mensagem += "Horário de abertura: " + horaAbertura + "hrs\n";
+        mensagem += "Horário de fechamento: " + horaFechamento + "hrs\n";
+        mensagem += "Prato principal: " + pratoPrincipal + "\n";
+        mensagem += "Ingredientes:\n";
+
+        for (Ingrediente ingrediente : ingredientes) {
+            mensagem += " - " + ingrediente.toString() + "\n";
+        }
+
+        mensagem += "Funcionários:\n";
+
+        for (Funcionario funcionario : funcionarios) {
+            mensagem += " - " + funcionario.toString() + "\n";
+        }
+
+        return mensagem;
+    }
+
     public void adicionarIndrediente(Ingrediente ingrediente) {
         ingredientes.add(ingrediente);
     }

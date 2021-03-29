@@ -9,6 +9,14 @@ public class Ingrediente {
         this.dataValidade = dataValidade;
     }
 
+    @Override
+    public String toString() {
+        int diaMes = dataValidade.getDayOfMonth();
+        int mes = dataValidade.getMonthValue();
+        int ano = dataValidade.getYear();
+        return "Ingrediente: " + nome + " Data de validade: " + diaMes + "/" + mes + "/" + ano;
+    }
+
     public String getNome() {
         return nome;
     }
