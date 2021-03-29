@@ -1,13 +1,19 @@
 import java.util.ArrayList;
 
 public class Cozinha {
+    private Especialidade especialidade;
     private int horaAbertura;
     private int horaFechamento;
     private String pratoPrincipal;
     private ArrayList<Ingrediente> ingredientes;
     private ArrayList<Funcionario> funcionarios;
 
-    public Cozinha(int horaAbertura, int horaFechamento, String pratoPrincipal) {
+    public enum Especialidade {
+        Mineira, Chinesa, Italiana, Japonesa, Mexicana
+    }
+
+    public Cozinha(Especialidade especialidade, int horaAbertura, int horaFechamento, String pratoPrincipal) {
+        this.especialidade = especialidade;
         this.horaAbertura = horaAbertura;
         this.horaFechamento = horaFechamento;
         this.pratoPrincipal = pratoPrincipal;
