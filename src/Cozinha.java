@@ -1,12 +1,13 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Cozinha {
-    private Especialidade especialidade;
+    private final Especialidade especialidade;
     private int horaAbertura;
     private int horaFechamento;
     private String pratoPrincipal;
-    private ArrayList<Ingrediente> ingredientes;
-    private ArrayList<Funcionario> funcionarios;
+    private final ArrayList<Ingrediente> ingredientes;
+    private final ArrayList<Funcionario> funcionarios;
 
     public enum Especialidade {
         Mineira, Chinesa, Italiana, Japonesa, Mexicana
@@ -23,32 +24,44 @@ public class Cozinha {
 
     @Override
     public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
         String mensagem = "";
         mensagem += "Cozinha de especialidade " + especialidade + ":\n";
         mensagem += "Horário de abertura: " + horaAbertura + "hrs\n";
         mensagem += "Horário de fechamento: " + horaFechamento + "hrs\n";
         mensagem += "Prato principal: " + pratoPrincipal + "\n";
         mensagem += "Ingredientes:\n";
+        stringBuilder.append(mensagem);
 
         for (Ingrediente ingrediente : ingredientes) {
-            mensagem += " - " + ingrediente.toString() + "\n";
+            mensagem = " - " + ingrediente.toString() + "\n";
+            stringBuilder.append(mensagem);
         }
 
-        mensagem += "Funcionários:\n";
+        stringBuilder.append("Funcionários:\n");
 
         for (Funcionario funcionario : funcionarios) {
-            mensagem += " - " + funcionario.toString() + "\n";
+            mensagem = " - " + funcionario.toString() + "\n";
+            stringBuilder.append(mensagem);
         }
 
         return mensagem;
     }
 
-    public void adicionarIndrediente(Ingrediente ingrediente) {
+    public void adicionarIngrediente(Ingrediente ingrediente) {
         ingredientes.add(ingrediente);
+    }
+
+    public void adicionarIngrediente(Ingrediente... ingredientes) {
+        this.ingredientes.addAll(Arrays.asList(ingredientes));
     }
 
     public void adicionarFuncionario(Funcionario funcionario) {
         funcionarios.add(funcionario);
+    }
+
+    public void adicionarFuncionario(Funcionario... funcionarios) {
+        this.funcionarios.addAll(Arrays.asList(funcionarios));
     }
 
     public int getHoraAbertura() {
