@@ -45,7 +45,7 @@ public class Cozinha {
             stringBuilder.append(mensagem);
         }
 
-        return mensagem;
+        return stringBuilder.toString();
     }
 
     public void adicionarIngrediente(Ingrediente ingrediente) {
