@@ -1,3 +1,5 @@
+package ExercicioCozinha;
+
 import java.time.LocalDate;
 
 public class Ingrediente {

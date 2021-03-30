@@ -1,3 +1,5 @@
+package ExercicioCozinha;
+
 public class Funcionario {
     private String nome;
     private Funcao funcao;
